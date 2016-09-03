@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SandwhichMaker</title>
+	<link rel="stylesheet" href="sand.css">
+</head>
+<body>
+  <form id="entireForm">
+    <select id="bread" multiple size="6">
+      <optgroup label="Bread">
+        <option value="Wheat">Wheat</option>
+        <option value="White">White</option>
+        <option value="Sourdough">Sourdough</option>
+      </optgroup>
+ 	</select>
+ 	<select multiple size="6"  id="meat">
+      <optgroup label="Meat">
+        <option value="Turkey">Turkey</option>
+        <option value="Ham">Ham</option>
+        <option value="Tuna">Tuna</option>
+        <option value="No Meat">No Meat</option>
+    </select>
+
+    <select id="cheese" multiple size="6">
+      </optgroup>
+      <optgroup label="Cheese" >
+        <option value="American">American</option>
+        <option value="Swiss">Swiss</option>
+      </optgroup>
+    </select>
+   
+    <select id="condiments" multiple size="6">  
+      <optgroup label="Condiments">
+        <option value="Mayonaise">Mayonaise</option>
+        <option value="Mustard">Mustard</option>
+      </optgroup>
+    </select>
+   
+    <select id="veggies" multiple size="6">  
+      <optgroup label="Veggies" >
+        <option value="Onions">Onions</option>
+        <option value="Pickles">Pickles</option>
+        <option value="Lettuce">Lettuce</option>
+        <option value="Peppers">Peppers</option> 
+      </optgroup>
+    </select>
+    <button id="btnSpecial" type="button" onclick="">Get Total</button>
+  </form>
+<div id="results">
+  
+</div>
+  <script type="text/javascript" src="sandwichmaker1.js"></script>
+  <script type="text/javascript" src="condiments.js"></script>
+  <script type="text/javascript" src="veggies.js"></script>
+  <script type="text/javascript" src="cheese.js"></script>
+   <script type="text/javascript" src="bread.js"></script>
+  <script type="text/javascript" src="meat.js"></script>
+  <script type="text/javascript" src="DOMHandler.js"></script>
+</body>
+</html>
