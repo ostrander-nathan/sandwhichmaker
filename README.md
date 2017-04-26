@@ -2,17 +2,23 @@
 
 
 ## Description
-A sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. A Sandwich module with individual modules, using IIFE syntax, to augment Sandwich:
+* A sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. 
 
-bread
+### Final Result:
+> A Sandwich module with individual modules, using IIFE syntax, to augment Sandwich:
 
-## How to run
-In your terminal run:
+### Take-home Lesson:
+
+> Iife syntax to create a sandwich ordering application
+
+
+### How to run (Node must be installed on your machine):
 ```
-http-server -p 9999
+git clone https://github.com/ostrander-nathan/sandwichmaker
+npm install http-server -g
+http-server -p 8080
 ```
-then navigate to [http://localhost:9999](http://localhost:9999) in your browser.
 
 
-## Contributers
--[Nathan Ostrander](https://github.com/ostrander-nathan)# sandwhichmaker
+### Contributors:
+[Nathan Ostrander](https://github.com/ostrander-nathan)

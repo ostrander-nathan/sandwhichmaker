@@ -23,56 +23,56 @@ displayOrder.innerHTML += " Your order:";
   and get the value of the topping from your augmented IIFE
 */
 meatChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
-  selectedTopping = event.target.value;
+    // Get the value chosen from the DOM
+    selectedTopping = event.target.value;
 
-  SandwichMaker.addMeat(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-  SandwichMaker.addTopping(SandwichMaker.getMeatToppingPrice());
-  displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getMeatToppingPrice() + "<br>";
+    SandwichMaker.addMeat(selectedTopping);
+    // Add the topping to the SandwichMaker to increase the total price
+    SandwichMaker.addTopping(SandwichMaker.getMeatToppingPrice());
+    displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getMeatToppingPrice() + "<br>";
 });
 breadChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
-  selectedTopping = event.target.value;
+    // Get the value chosen from the DOM
+    selectedTopping = event.target.value;
 
-  SandwichMaker.addBread(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-  SandwichMaker.addTopping(SandwichMaker.getBreadToppingPrice());
-  displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getBreadToppingPrice() + "<br>";
+    SandwichMaker.addBread(selectedTopping);
+    // Add the topping to the SandwichMaker to increase the total price
+    SandwichMaker.addTopping(SandwichMaker.getBreadToppingPrice());
+    displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getBreadToppingPrice() + "<br>";
 });
 cheeseChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
-  selectedTopping = event.target.value;
+    // Get the value chosen from the DOM
+    selectedTopping = event.target.value;
 
-  SandwichMaker.addCheese(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-  SandwichMaker.addTopping(SandwichMaker.getCheeseToppingPrice());
-  displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getCheeseToppingPrice() + "<br>";
+    SandwichMaker.addCheese(selectedTopping);
+    // Add the topping to the SandwichMaker to increase the total price
+    SandwichMaker.addTopping(SandwichMaker.getCheeseToppingPrice());
+    displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getCheeseToppingPrice() + "<br>";
 });
 veggiesChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
-  selectedTopping = event.target.value;
+    // Get the value chosen from the DOM
+    selectedTopping = event.target.value;
 
-  SandwichMaker.addVeggie(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-  SandwichMaker.addTopping(SandwichMaker.getVeggieToppingPrice());
-  displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getVeggieToppingPrice() + "<br>";
+    SandwichMaker.addVeggie(selectedTopping);
+    // Add the topping to the SandwichMaker to increase the total price
+    SandwichMaker.addTopping(SandwichMaker.getVeggieToppingPrice());
+    displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getVeggieToppingPrice() + "<br>";
 });
 condimentsChooser.addEventListener("change", function(event) {
-  // Get the value chosen from the DOM
-  selectedTopping = event.target.value;
+    // Get the value chosen from the DOM
+    selectedTopping = event.target.value;
 
-  SandwichMaker.addCondiments(selectedTopping);
-  // Add the topping to the SandwichMaker to increase the total price
-  SandwichMaker.addTopping(SandwichMaker.getCondimentsToppingPrice());
-  displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getCondimentsToppingPrice() + "<br>";
+    SandwichMaker.addCondiments(selectedTopping);
+    // Add the topping to the SandwichMaker to increase the total price
+    SandwichMaker.addTopping(SandwichMaker.getCondimentsToppingPrice());
+    displayOrder.innerHTML += selectedTopping + " " + SandwichMaker.getCondimentsToppingPrice() + "<br>";
 });
 
 
 var btn = document.getElementById("btnSpecial");
 btn.addEventListener('click', function(event) {
-  event.preventDefault();
-  finalSandwichPrice = SandwichMaker.getTotalPrice();
-  displayOrder.innerHTML += "Total:" + finalSandwichPrice;
+    event.preventDefault();
+    finalSandwichPrice = SandwichMaker.getTotalPrice();
+    displayOrder.innerHTML += "Total:" + finalSandwichPrice;
 
 });
